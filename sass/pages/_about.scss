@@ -1,0 +1,66 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  background-image: url(/static/img/png/Oval.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center; 
+  border-radius: 15px;
+  margin-bottom: 160px;
+  
+  &__title{
+    font-family: Jost;
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 32px;
+  }
+  &__description{
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    max-width: 458PX;
+  }
+  
+  &__img{
+    border-radius: 15px;
+  }
+}
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background-image: url(/static/img/png/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+    border-radius: 15px;
+    margin-bottom: 160px;
+}
+.two{
+  display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background-image: url(/static/img/png/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+    border-radius: 15px;
+    margin-bottom: 160px;
+   
+}
+.a-card{
+  color: #333136;
+  .about__title{
+    color: #E7816B;
+  }
+}
+.about-info{
+  margin-bottom: 160px;
+}

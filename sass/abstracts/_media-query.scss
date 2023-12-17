@@ -23,6 +23,32 @@
   .card__img{
     max-width: 240px;
   }
+  .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    &__hero{
+      padding-top: 50px;
+      color: #fff;
+    }
+    .about-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      &__hero{
+        
+        padding-top: 50px;
+        color: #fff;
+     
+      }
+    }
+  }
+  .about__img{
+    max-width: 200px;
+  }
 }
 @media screen and (min-width:300px){
   body{
@@ -52,16 +78,26 @@
   .card__img{
     max-width: 300px;
   }
+  .about__img{
+    max-width: 280px;
+  }
 }
 @media screen and (min-width:370px){
   .card__img{
     max-width: 330px;
+  }
+  .about__img{  
+    padding-left: 15px;
   }
 }
 @media screen and (min-width:400px){
   .card__img{
     max-width: 350px;
   }
+  .about__img{
+    max-width: 320px;
+  }
+
 }
 @media screen and (min-width:800px){
   .nav__list{
@@ -72,7 +108,10 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .about__img{
+    max-width: 400px;
+    padding-top: 0;
+  }
 }
 @media screen and (min-width:800px){
   .card-margin-2{
@@ -80,4 +119,33 @@
     align-items: center;
     justify-content: start;
   }
+  .about__hero{
+    padding-left: 90px  ;
+    text-align: left;
+    padding-top: 0;
+  }
+  .about-wrapper{
+    .about__hero{
+      padding-left: 90px  ;
+      text-align: left;
+      padding-top: 0;
+    }
+
+  }
+  .about-wrapper{
+    .about__hero{
+      padding-right: 90px;
+    }
+  }
+}
+@media screen and (min-width:1020px){
+  .about{
+    .about__hero{
+      padding: 50px;
+    }
+  }
+  .about__img{
+    max-width: auto;
+  }
+ 
 }
