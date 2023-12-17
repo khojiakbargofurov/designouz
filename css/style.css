@@ -788,6 +788,17 @@ svg path:hover {
   padding-bottom: 24px;
 }
 
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  background-color: #E7816B;
+  border: none;
+}
+
 .container {
   max-width: 1111px;
   margin: 0 auto;
