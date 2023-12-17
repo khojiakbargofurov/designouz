@@ -1,0 +1,35 @@
+.l-wrapper{
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  background-image: url(/static/img/png/l-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  padding: 100px 0;
+}
+.location-cards{
+  padding: 50px 0;
+}
+.location-card{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.l-div{
+  padding-left: 95px;
+  display: flex;
+  gap: 60px;
+  color: #333136;
+}
+.location-title{
+  color: #E7816B;
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+  padding-left: 95px;
+  padding-bottom: 24px;
+}
