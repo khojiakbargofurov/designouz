@@ -1,0 +1,617 @@
+@media only screen and (min-width: 0) {
+  body {
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .nav {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card__img {
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 300px) {
+  body {
+    padding: 0 20px;
+  }
+  .nav {
+    padding: 64px 0;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav .card-margin-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card__img {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .card__img {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .card__img {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav__list {
+    gap: 40px;
+  }
+  .card-margin-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  .card-margin-2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+/* jost-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* jost-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jost-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* jost-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-family: Jost, sans-serif;
+}
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav .nav-item {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  letter-spacing: 2px;
+}
+.nav__link {
+  color: #333136;
+}
+.nav__link:hover {
+  text-decoration-line: underline;
+  transition: margin-right 2s ease-in-out 0.5s;
+}
+
+.hero-section {
+  margin-bottom: 160px;
+}
+
+.hero-container {
+  background-image: url(/static/img/jpg/hero-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+
+.hero {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.title {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 100% */
+  max-width: 540px;
+  padding-bottom: 35px;
+}
+
+.description {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  max-width: 445px;
+  padding-bottom: 40px;
+}
+
+.btn {
+  display: block;
+  padding: 18px 25px;
+  border-radius: 8px;
+  color: #333136;
+  background-color: #fff;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #FFAD9B;
+  color: #FFF;
+}
+
+.hero-img {
+  max-width: 284px;
+  display: flex;
+}
+
+.web-hero {
+  background-image: url(/static/img/jpg/bg-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0;
+  border-radius: 15px;
+  margin-bottom: 160px;
+}
+
+.web-description {
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  max-width: 400px;
+}
+
+.design-row {
+  gap: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.main-row {
+  margin-bottom: 160px;
+}
+
+.link {
+  display: inline-block;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper-one {
+  background-image: url(/static/img/jpg/web-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 640px;
+  cursor: pointer;
+}
+
+.wrapper-one:hover {
+  background-image: linear-gradient();
+}
+
+.wrapper-two {
+  background-image: url(/static/img/jpg/app-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 308px;
+  cursor: pointer;
+}
+
+.wrapper-three {
+  background-image: url(/static/img/jpg/graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 308px;
+  cursor: pointer;
+}
+
+.info__img {
+  display: flex;
+  max-width: 202px;
+  height: auto;
+  padding-bottom: 48px;
+}
+.info__title {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  letter-spacing: 5px;
+  padding-bottom: 32px;
+}
+.info__description {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  max-width: 350px;
+}
+
+.info-row {
+  display: flex;
+  gap: 30px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-web {
+  background-image: url(/static/img/jpg/web-design-col.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 308px;
+  cursor: pointer;
+}
+
+.wrapper-one,
+.wrapper-two,
+.wrapper-three,
+.wrapper-web {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+
+.wrapper-one::before,
+.wrapper-two::before,
+.wrapper-three::before,
+.wrapper-web::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: left;
+  transition: all 0.3s ease-in;
+}
+
+.design-title {
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+  letter-spacing: 2px;
+  padding-bottom: 24px;
+  z-index: 4;
+}
+
+.design-description {
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  z-index: 4;
+}
+
+.wrapper-one:hover::before,
+.wrapper-two:hover::before,
+.wrapper-three:hover::before,
+.wrapper-web:hover::before {
+  background: rgba(231, 129, 107, 0.8);
+  color: white;
+}
+
+.app-design,
+.graphic-design {
+  padding: 107px 90px;
+}
+
+.row-gap {
+  display: flex;
+  gap: 20px;
+}
+
+.rowgab {
+  display: flex;
+  gap: 20px;
+}
+
+.web-card {
+  border-radius: 15px;
+  background-color: #FDF3F0;
+  max-width: 350px;
+}
+
+.info-wrapper {
+  padding: 32px;
+}
+
+.info__title {
+  padding-bottom: 16px;
+}
+
+.card-margin {
+  margin-bottom: 32px;
+}
+
+.card-margin-2 {
+  margin-bottom: 160px;
+}
+
+.web-card:hover {
+  background-color: #E7816B;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-top {
+  position: relative;
+  bottom: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url(/static/img/png/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  min-height: 292px;
+}
+
+.top-title {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px; /* 100% */
+  max-width: 268px;
+  padding-bottom: 20px;
+}
+
+.top-description {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  max-width: 450px;
+}
+
+.footer-bottom {
+  padding-top: 90px;
+  background-color: #1D1C1E;
+}
+
+.footer-bottom-2 {
+  background-color: #1D1C1E;
+}
+
+.f-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+}
+
+.f-link {
+  color: #fff;
+}
+
+.f-info {
+  padding: 31px 0 72px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.adress {
+  opacity: 0.5;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+strong {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+
+.contact {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  opacity: 0.5;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+svg path:hover {
+  fill: #FFAD9B;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
